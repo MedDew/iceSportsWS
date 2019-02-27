@@ -28,6 +28,6 @@ public class Activity {
     @Column(nullable = false,updatable = false)
     private Long id;
     
-    @Column(length = 19, nullable = false)
+    @Column(length = 20, nullable = false)
     private String activityLabel;
 }

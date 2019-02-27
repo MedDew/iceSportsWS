@@ -10,11 +10,13 @@ import com.IceSports.club.IceSportsWS.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Mehdi
  */
+@Service
 public class MemberImpl implements MemberInterface{
     
     @Autowired

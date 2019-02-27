@@ -17,12 +17,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author Mehdi
  */
 @Entity
+@Getter
+@Setter
 public class Member {
     
     @Id

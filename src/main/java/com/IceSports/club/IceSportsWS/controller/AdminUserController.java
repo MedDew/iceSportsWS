@@ -37,22 +37,22 @@ public class AdminUserController {
         return adminUserService.findOne(adminUserId);
     }
     
-    @PostMapping(path = "/adminuser")
+    @PostMapping(path = "/adminuser/create")
     public AdminUser postAdminUser(@RequestBody AdminUser adminUser){
         return adminUserService.createAdmiUser(adminUser);
     }
     
-    @PutMapping(path = "/adminuser")
+    @PutMapping(path = "/adminuser/update")
     public AdminUser putAdminUser(@RequestBody AdminUser adminUser){
         return adminUserService.updateAdmiUser(adminUser);
     }
     
-    @PutMapping(path = "/adminuser")
+    @PutMapping(path = "/adminuser/update-password")
     public AdminUser putAdminUserPassword(@RequestBody AdminUser adminUser){
         return adminUserService.updateAdmiUserPassword(adminUser);
     }
     
-    @DeleteMapping(path = "/adminuser")
+    @DeleteMapping(path = "/adminuser/delete")
     public AdminUser deleteAdminUser(AdminUser adminUser){
         return adminUserService.deleteAdmiUser(adminUser);
     }

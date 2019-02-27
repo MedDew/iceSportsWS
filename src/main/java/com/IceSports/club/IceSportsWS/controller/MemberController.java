@@ -37,17 +37,17 @@ public class MemberController {
         return memberService.findOne(memberId);
     }
     
-    @PostMapping(path = "/member")
+    @PostMapping(path = "/member/create")
     public Member postMember(@RequestBody Member member){
         return memberService.createMember(member);
     }
     
-    @PutMapping(path = "/member")
+    @PutMapping(path = "/member/update")
     public Member putMember(@RequestBody Member member){
         return memberService.updateMember(member);
     }
     
-    @DeleteMapping(path = "/member")
+    @DeleteMapping(path = "/member/delete")
     public Member deleteMember(@RequestBody Member member){
         return memberService.deleteMember(member);
     }
